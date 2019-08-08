@@ -1,0 +1,28 @@
+header{
+    background: url("../assets/header-image.jpg"), linear-gradient(rgba(0, 0, 0, 0.4) rgba(0, 0, 0, 0.9));
+    background-size: cover;
+    height: 90vh;
+}
+
+nav{
+    width: 100%;
+}
+
+nav ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    li{
+        padding: 0 5px;
+    }
+    a{
+        color: white;
+    }
+}
+
+
+
+
+

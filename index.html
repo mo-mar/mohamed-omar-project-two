@@ -7,19 +7,21 @@
     <title>Under the Sea</title>
     <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Barlow:400,700|Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/89c69c428a.js"></script>
 </head>
 <body>
     <!-- header markup begins -->
     <header>
         <!-- nav bar markup -->
-        <nav>
-            <ul class="top-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="wrapper">
+            <nav>
+                <ul class="top-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
         <!-- main h1 and hero image -->
         <div class="hero">
             <div class="hero-hed">
@@ -29,15 +31,20 @@
                 <img src="assets/home-box-main.png" alt="Goldfish are pictured swimming next to a coral reef.">
             </div>
         </div>
+        </div>
     </header>
     <!-- end of header markup -->
     <!-- main markup begins -->
     <main>
+        <!--main headline under hero image-->
         <section class="module-1">
-            <h3>What is under the sea?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, iure aperiam vitae sit nihil voluptates minima quidem commodi? Quia quibusdam provident eos similique accusantium. Optio tempora pariatur mollitia ab inventore quas in cumque adipisci, eligendi dolor architecto saepe laboriosam deleniti dignissimos esse quae voluptas? Expedita omnis perspiciatis adipisci culpa fuga!</p>
-            <a href="#" class="button">Find out more</a>
+            <div class="wrapper">
+                <h3>What is under the sea?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, iure aperiam vitae sit nihil voluptates minima quidem commodi? Quia quibusdam provident eos similique accusantium. Optio tempora pariatur mollitia ab inventore quas in cumque adipisci, eligendi dolor architecto saepe laboriosam deleniti dignissimos esse quae voluptas? Expedita omnis perspiciatis adipisci culpa fuga!</p>
+                <a href="#" class="button">Find out more</a>
+            </div>
         </section>
+        <!-- spruce box with two images and two text boxes -->
         <section class="module2">
             <div class="top-row">
             <div class="module2-img1">
@@ -60,27 +67,30 @@
                 </div>
             </div>
         </section>
+        <!-- 4 icons and subheds -->
         <section class="services">
             <div class="service1"></div>
-            <i></i>
-            <h4>Locations</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolor voluptatum minima itaque explicabo impedit earum, deserunt tenetur ex repellendus!</p>
+                <i class="fas fa-location-arrow" aria-hidden="true"></i>
+                <h4>Locations</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolor voluptatum minima itaque explicabo impedit earum, deserunt tenetur ex repellendus!</p>
             <div class="service2"></div>
-            <i></i>
-            <h4>Community</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi incidunt hic modi vel suscipit adipisci sint error, aliquam eum dicta.</p>
+                <i class="fas fa-users" aria-hidden="true"></i>
+                <h4>Community</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi incidunt hic modi vel suscipit adipisci sint error, aliquam eum dicta.</p>
             <div class="service3"></div>
-            <i></i>
-            <h4>Blog</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum animi earum voluptatibus sunt fuga quisquam delectus dolor voluptate accusantium totam?</p>
+            <i class="fas fa-file" aria-hidden="true"></i>
+                <h4>Blog</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum animi earum voluptatibus sunt fuga quisquam delectus dolor voluptate accusantium totam?</p>
             <div class="service4"></div>
-            <i></i>
-            <h4>Get in touch</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident labore dolorum accusamus nobis eligendi, magni officiis facere enim quae aliquam!</p>
+                <i class="fas fa-phone" aria-hidden="true"></i>
+                <h4>Get in touch</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident labore dolorum accusamus nobis eligendi, magni officiis facere enim quae aliquam!</p>
         </section>
+        <!-- big ol' banner image -->
         <figure>
             <img src="assets/banner.jpg" alt="A visitor points at a huge shark swimming in an aquarium.">
         </figure>
+        <!-- This month profile (has one image and one text box) -->
         <section class="module-3">
             <div class="module3-img">
                 <img src="assets/small-box.jpg" alt="A school of fish swims inside an aquarium.">
@@ -91,6 +101,7 @@
                 <a href="#">Find out more</a>
             </div>
         </section>
+        <!-- mini gallery at bottom of page, has three images -->
         <figure class="triple-gallery">
             <ul class="mini-gallery">
                 <li><img src="assets/gallery-image-1.jpg"></li>
