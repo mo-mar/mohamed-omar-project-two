@@ -23,9 +23,88 @@
 .module-1-flex a.button{
     color: black;
     background: $robin;
-    padding: 5px 15px;
 }
 
 // spruce box with two images, two text boxes
 
-.module2
+.module2{
+    background: $spruce;
+}
+
+.top-row, img .bottom-row img{
+    width: 100%;
+}
+
+.top-row{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.module2-info1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 60px;
+    padding-left: 60px;
+    flex: 1 0 50%;
+}
+
+.bottom-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.module2-img1 img, .module2-img2 img{
+    width: 100%;
+}
+
+.module2-img1, .module2-img2{
+    flex: 1 0 50%;
+}
+
+.module2-info2{
+    order: -1;
+    text-align: right;
+    padding-right: 50px;
+    padding-top: 30px;
+    flex: 1 0 50%;
+    padding-top: 60px;
+    padding-left: 60px;
+}
+
+.module2 a.button{
+    color: #fff;
+    background: $dbg;
+}
+
+
+// services section
+
+.services{
+    background: $dbg;
+}
+
+.services-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service1, .service2, .service3, .service4{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 50%;
+    p{
+        width: 80%;
+    }
+}
+
+h4{
+    display: inline;
+}
+
+i{
+    background: $robin;
+    display: inline;
+}
