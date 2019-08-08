@@ -1,11 +1,13 @@
 header{
-    background: url("../assets/header-image.jpg"), linear-gradient(rgba(0, 0, 0, 0.4) rgba(0, 0, 0, 0.9));
+    background: linear-gradient(rgba(0, 0, 0, 0.3) rgba(0, 0, 0, 0.9)), url("../assets/header-image.jpg");
     background-size: cover;
     height: 90vh;
+    width: 100%;
 }
 
 nav{
     width: 100%;
+    padding-top: 15px;
 }
 
 nav ul{
@@ -14,12 +16,37 @@ nav ul{
     list-style: none;
     display: flex;
     justify-content: flex-end;
-    li{
-        padding: 0 5px;
-    }
-    a{
-        color: white;
-    }
+    margin-right: 75px;
+        li{
+            padding: 0 22px;
+        }
+        a{
+            color: white;
+            text-transform: uppercase;
+            font-family: 'Barlow', sans-serif;
+            font-weight: 700;
+        }
+}
+
+.hero{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-hed{
+    flex: 1 0 40%;
+}
+
+.hero-image{
+    flex: 1 0 60%;
+    // position: relative;
+    // top: 110px;
+    // right: -80px;
+}
+
+.hero-image img{
+    width: 100%;
 }
 
 

@@ -1,0 +1,31 @@
+
+
+.module-1{
+    width: 100%;
+    background: $dbg;
+    padding: 120px 0;
+}
+
+.module-1-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        h3{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p{
+            width: 90%;
+        }
+}
+
+.module-1-flex a.button{
+    color: black;
+    background: $robin;
+    padding: 5px 15px;
+}
+
+// spruce box with two images, two text boxes
+
+.module2
