@@ -382,6 +382,16 @@ nav ul a {
   width: 100%;
 }
 
+.module2-img1 img {
+  -webkit-box-shadow: 20px 20px 0px #86e0f9;
+          box-shadow: 20px 20px 0px #86e0f9;
+}
+
+.module2-img2 img {
+  -webkit-box-shadow: -20px 20px 0px #86e0f9;
+          box-shadow: -20px 20px 0px #86e0f9;
+}
+
 .module2-img1, .module2-img2 {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 50%;
@@ -409,38 +419,54 @@ nav ul a {
 
 .services {
   background: #0c1423;
+  padding: 80px;
 }
 
 .services-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .service1, .service2, .service3, .service4 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 50%;
-          flex: 1 0 50%;
+  position: relative;
+  width: 50%;
+  margin: 15px 0;
 }
 
 .service1 p, .service2 p, .service3 p, .service4 p {
   width: 80%;
+  clear: both;
 }
 
-h4 {
-  display: inline;
+.services-flex h4 {
+  float: left;
+  width: 40%;
 }
 
-i {
+.services-flex i {
+  float: left;
+  color: #0c1423;
+  padding: 0.5em;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   background: #86e0f9;
-  display: inline;
+  margin-right: 25px;
+}
+
+.banner-home-page {
+  width: 100%;
+}
+
+.banner-home-page img {
+  width: 100%;
 }
