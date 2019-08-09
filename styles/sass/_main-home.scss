@@ -1,5 +1,8 @@
 
 
+main a.button, a:visited, a:link{
+    text-decoration: none;
+}
 .module-1{
     width: 100%;
     background: $dbg;
@@ -109,6 +112,7 @@
     p{
         width:80%;
         clear: both;
+        margin-left: 65px;
     }
     margin: 15px 0;
 }
@@ -134,8 +138,74 @@
 
 .banner-home-page{
     width: 100%;
+    background: $dbg;
 }
 
 .banner-home-page img{
     width: 100%;
 }
+
+// module 3 with one image and one text box
+
+.module-3{
+    width: 100%;
+    background: $dbg;
+    padding: 70px;
+}
+
+.module-3-flex{
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.module3-img{
+    // flex: 1 0 40%;
+    width: 25%;
+    
+}
+
+.module3-info{
+    margin-left: 50px;
+        p{
+            margin-bottom: 50px;
+        }
+        width: calc(75% - 50px);
+    }
+
+.module3-img img{
+    box-shadow: 30px 30px $robin;
+    display: block;
+    width: 100%;
+}
+
+.module-3 a.button{
+    background: $robin;
+    color: $dbg;
+}
+
+// mini triple-gallery at bottom of page
+
+.triple-gallery{
+    width: 100%;
+    background: $spruce;
+}
+
+.mini-gallery{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.mini-gallery li{
+    width: calc(100% / 3) - 40px;
+    margin: 0 20px;
+}
+
+.mini-gallery img{
+    width: 100%;
+    display: block;
+}
+

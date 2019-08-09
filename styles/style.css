@@ -294,6 +294,10 @@ nav ul a {
   width: 100%;
 }
 
+main a.button, a:visited, a:link {
+  text-decoration: none;
+}
+
 .module-1 {
   width: 100%;
   background: #0c1423;
@@ -444,6 +448,7 @@ nav ul a {
 .service1 p, .service2 p, .service3 p, .service4 p {
   width: 80%;
   clear: both;
+  margin-left: 65px;
 }
 
 .services-flex h4 {
@@ -465,8 +470,75 @@ nav ul a {
 
 .banner-home-page {
   width: 100%;
+  background: #0c1423;
 }
 
 .banner-home-page img {
   width: 100%;
+}
+
+.module-3 {
+  width: 100%;
+  background: #0c1423;
+  padding: 70px;
+}
+
+.module-3-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.module3-img {
+  width: 25%;
+}
+
+.module3-info {
+  margin-left: 50px;
+  width: calc(75% - 50px);
+}
+
+.module3-info p {
+  margin-bottom: 50px;
+}
+
+.module3-img img {
+  -webkit-box-shadow: 30px 30px #86e0f9;
+          box-shadow: 30px 30px #86e0f9;
+  display: block;
+  width: 100%;
+}
+
+.module-3 a.button {
+  background: #86e0f9;
+  color: #0c1423;
+}
+
+.triple-gallery {
+  width: 100%;
+  background: #0f614e;
+}
+
+.mini-gallery {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mini-gallery li {
+  width: calc(100% / 3)-40px;
+  margin: 0 20px;
+}
+
+.mini-gallery img {
+  width: 100%;
+  display: block;
 }
