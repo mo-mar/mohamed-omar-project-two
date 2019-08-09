@@ -32,6 +32,7 @@ main a.button, a:visited, a:link{
 
 .module2{
     background: $spruce;
+    position: relative;
 }
 
 .top-row, img .bottom-row img{
@@ -41,7 +42,7 @@ main a.button, a:visited, a:link{
 .top-row{
     display: flex;
     justify-content: space-between;
-    
+    width: 100%;
 }
 
 .module2-info1{
@@ -50,40 +51,48 @@ main a.button, a:visited, a:link{
     align-items: flex-start;
     padding-top: 60px;
     padding-left: 60px;
-    flex: 1 0 50%;
+    width: 50%;
 }
 
 .bottom-row{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.module2-img1 img, .module2-img2 img{
     width: 100%;
-    
+    padding-bottom: 35px;
 }
 
 .module2-img1 img{
     box-shadow: 20px 20px 0px $robin;
+    width: 100%;
 }
 
 .module2-img2 img{
     box-shadow: -20px 20px 0px $robin;
+    width: 100%;
 }
 
 .module2-img1, .module2-img2{
-    flex: 1 0 50%;
+    width: 45%;
+}
+
+.module2-img1{
+    position: relative;
+    top: -20px;
+}
+
+.module2-img2{
+    position: relative;
+    bottom: -30px;
 }
 
 .module2-info2{
     order: -1;
     text-align: right;
-    padding-right: 50px;
-    padding-top: 30px;
-    flex: 1 0 50%;
-    padding-top: 60px;
-    padding-left: 60px;
+    width: 50%;
+    margin-top: 90px;
+    padding-left: 35px;
+    width: 45%;
 }
 
 .module2 a.button{
@@ -96,7 +105,7 @@ main a.button, a:visited, a:link{
 
 .services{
     background: $dbg;
-    padding: 80px;
+    padding: 100px;
 }
 
 .services-flex{
@@ -156,7 +165,8 @@ main a.button, a:visited, a:link{
 .module-3-flex{
     display: flex;
     padding-top: 50px;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
     width: 100%;
 }
 
@@ -167,11 +177,13 @@ main a.button, a:visited, a:link{
 }
 
 .module3-info{
-    margin-left: 50px;
+    margin-left: 90px;
+    width: calc(75% - 90px);
+    padding-left: 20px;
         p{
-            margin-bottom: 50px;
+        margin-bottom: 90px;
+        width: 100%;
         }
-        width: calc(75% - 50px);
     }
 
 .module3-img img{
@@ -190,18 +202,23 @@ main a.button, a:visited, a:link{
 .triple-gallery{
     width: 100%;
     background: $spruce;
+    padding: 50px 10px;
 }
 
 .mini-gallery{
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     display: flex;
+    justify-content: space-around;
+    width: 80%;
 }
 
 .mini-gallery li{
-    width: calc(100% / 3) - 40px;
-    margin: 0 20px;
+    // width: calc(100% / 3) - 30px;
+    // margin: 0 15px;
+    flex: 1 0 33.3333%;
+    margin: 15px;
 }
 
 .mini-gallery img{

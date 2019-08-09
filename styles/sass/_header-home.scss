@@ -1,8 +1,9 @@
 header{
     background: linear-gradient(rgba(0, 0, 0, 0.3) rgba(0, 0, 0, 0.9)), url("../assets/header-image.jpg");
     background-size: cover;
-    height: 90vh;
+    height: 80vh;
     width: 100%;
+    position: relative;
 }
 
 nav{
@@ -36,14 +37,14 @@ nav ul{
 }
 
 .hero-hed{
-    flex: 1 0 40%;
+    width: 40%;
 }
 
 .hero-image{
-    flex: 1 0 60%;
-    // position: relative;
-    // top: 110px;
-    // right: -80px;
+    width: 50%;
+    position: absolute;
+    right: 0px;
+
 }
 
 .hero-image img{

@@ -234,8 +234,9 @@ header {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url("../assets/header-image.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.3) rgba(0, 0, 0, 0.9)), url("../assets/header-image.jpg");
   background-size: cover;
-  height: 90vh;
+  height: 80vh;
   width: 100%;
+  position: relative;
 }
 
 nav {
@@ -279,15 +280,13 @@ nav ul a {
 }
 
 .hero-hed {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 40%;
-          flex: 1 0 40%;
+  width: 40%;
 }
 
 .hero-image {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 60%;
-          flex: 1 0 60%;
+  width: 50%;
+  position: absolute;
+  right: 0px;
 }
 
 .hero-image img {
@@ -336,6 +335,7 @@ main a.button, a:visited, a:link {
 
 .module2 {
   background: #0f614e;
+  position: relative;
 }
 
 .top-row, img .bottom-row img {
@@ -349,6 +349,7 @@ main a.button, a:visited, a:link {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 
 .module2-info1 {
@@ -364,9 +365,7 @@ main a.button, a:visited, a:link {
           align-items: flex-start;
   padding-top: 60px;
   padding-left: 60px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 50%;
-          flex: 1 0 50%;
+  width: 50%;
 }
 
 .bottom-row {
@@ -380,26 +379,34 @@ main a.button, a:visited, a:link {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.module2-img1 img, .module2-img2 img {
   width: 100%;
+  padding-bottom: 35px;
 }
 
 .module2-img1 img {
   -webkit-box-shadow: 20px 20px 0px #86e0f9;
           box-shadow: 20px 20px 0px #86e0f9;
+  width: 100%;
 }
 
 .module2-img2 img {
   -webkit-box-shadow: -20px 20px 0px #86e0f9;
           box-shadow: -20px 20px 0px #86e0f9;
+  width: 100%;
 }
 
 .module2-img1, .module2-img2 {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 50%;
-          flex: 1 0 50%;
+  width: 45%;
+}
+
+.module2-img1 {
+  position: relative;
+  top: -20px;
+}
+
+.module2-img2 {
+  position: relative;
+  bottom: -30px;
 }
 
 .module2-info2 {
@@ -407,13 +414,10 @@ main a.button, a:visited, a:link {
       -ms-flex-order: -1;
           order: -1;
   text-align: right;
-  padding-right: 50px;
-  padding-top: 30px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 50%;
-          flex: 1 0 50%;
-  padding-top: 60px;
-  padding-left: 60px;
+  width: 50%;
+  margin-top: 90px;
+  padding-left: 35px;
+  width: 45%;
 }
 
 .module2 a.button {
@@ -423,7 +427,7 @@ main a.button, a:visited, a:link {
 
 .services {
   background: #0c1423;
-  padding: 80px;
+  padding: 100px;
 }
 
 .services-flex {
@@ -488,9 +492,10 @@ main a.button, a:visited, a:link {
   display: -ms-flexbox;
   display: flex;
   padding-top: 50px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
 }
 
@@ -499,12 +504,14 @@ main a.button, a:visited, a:link {
 }
 
 .module3-info {
-  margin-left: 50px;
-  width: calc(75% - 50px);
+  margin-left: 90px;
+  width: calc(75% - 90px);
+  padding-left: 20px;
 }
 
 .module3-info p {
-  margin-bottom: 50px;
+  margin-bottom: 90px;
+  width: 100%;
 }
 
 .module3-img img {
@@ -522,23 +529,40 @@ main a.button, a:visited, a:link {
 .triple-gallery {
   width: 100%;
   background: #0f614e;
+  padding: 50px 10px;
 }
 
 .mini-gallery {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 80%;
 }
 
 .mini-gallery li {
-  width: calc(100% / 3)-40px;
-  margin: 0 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 33.3333%;
+          flex: 1 0 33.3333%;
+  margin: 15px;
 }
 
 .mini-gallery img {
   width: 100%;
   display: block;
+}
+
+footer {
+  width: 100%;
+  background: #86e0f9;
+}
+
+footer p {
+  color: black;
+  text-align: center;
+  margin: 0;
 }
