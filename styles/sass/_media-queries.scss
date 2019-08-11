@@ -1,0 +1,55 @@
+
+
+// ipad landscape to laptop
+
+@media (min-width: 900px) and (max-width: 1024px){
+    .module2-info2{
+        margin-top: 15px;
+    }
+}
+
+
+@media (min-width: 600px) and (max-width: 900px){
+
+    header{
+        height: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: contain;
+    }
+
+    .top-nav{
+        display: none;
+    }
+
+    .hero-hed{
+        padding-left: 30px;
+    }
+
+    h1{
+        font-size: 5rem;
+    }
+
+    .module2-info2{
+        margin-top: 15px;
+    }
+
+    .hero-image{
+        padding-top: 50px;
+    }
+
+    .top-row, .bottom-row {
+        display: flex;
+        flex-direction: column;
+        align-items: space-around;
+    }
+    .module2-info1, .module2-info2, .module2-img1, .module2-img2{
+        width: 100%;
+    }
+
+    .module2-info2{
+        order: 0;
+        text-align: left;
+        margin-top: 90px;
+    }
+}

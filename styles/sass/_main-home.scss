@@ -6,7 +6,7 @@ main a.button, a:visited, a:link{
 .module-1{
     width: 100%;
     background: $dbg;
-    padding: 120px 0;
+    padding: 190px 0;
 }
 
 .module-1-flex{
@@ -52,6 +52,9 @@ main a.button, a:visited, a:link{
     padding-top: 60px;
     padding-left: 60px;
     width: 50%;
+    p{
+        width: 80%;
+    }
 }
 
 .bottom-row{
@@ -63,12 +66,12 @@ main a.button, a:visited, a:link{
 }
 
 .module2-img1 img{
-    box-shadow: 20px 20px 0px $robin;
+    box-shadow: 23px 20px 0px 0px $robin;
     width: 100%;
 }
 
 .module2-img2 img{
-    box-shadow: -20px 20px 0px $robin;
+    box-shadow: -23px 23px 0px $robin;
     width: 100%;
 }
 
@@ -90,7 +93,7 @@ main a.button, a:visited, a:link{
     order: -1;
     text-align: right;
     width: 50%;
-    margin-top: 90px;
+    margin-top: 120px;
     padding-left: 35px;
     width: 45%;
 }

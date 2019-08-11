@@ -1,7 +1,7 @@
 header{
     background: linear-gradient(rgba(0, 0, 0, 0.3) rgba(0, 0, 0, 0.9)), url("../assets/header-image.jpg");
     background-size: cover;
-    height: 80vh;
+    height: 90vh;
     width: 100%;
     position: relative;
 }
@@ -9,7 +9,7 @@ header{
 nav{
     width: 100%;
     padding-top: 15px;
-    padding-bottom: 80px;
+    padding-bottom: 120px;
 }
 
 nav ul{
@@ -20,7 +20,7 @@ nav ul{
     justify-content: flex-end;
     margin-right: 75px;
         li{
-            padding: 0 22px;
+            margin: 0 28px;
         }
         a{
             color: white;
@@ -38,13 +38,15 @@ nav ul{
 
 .hero-hed{
     width: 40%;
+    h1{
+        width: 30%;
+    }
 }
 
 .hero-image{
     width: 50%;
     position: absolute;
-    right: 0px;
-
+    right: 0;
 }
 
 .hero-image img{
