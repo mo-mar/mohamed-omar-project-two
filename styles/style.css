@@ -320,7 +320,7 @@ nav ul a {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  top: 60px;
+  top: 90px;
 }
 
 main a.button, a:visited, a:link {
@@ -605,7 +605,7 @@ main a.button, a:visited, a:link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100vw;
+  width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -613,7 +613,7 @@ main a.button, a:visited, a:link {
 
 .blog-post-side-bar {
   width: 35%;
-  padding-top: 60px;
+  padding-top: 80px;
   position: relative;
   margin-right: 60px;
 }
@@ -622,17 +622,20 @@ main a.button, a:visited, a:link {
   width: 100%;
   position: absolute;
   top: 45px;
+  left: 0;
 }
 
 .aside-image img {
   display: block;
-  width: 100%;
+  max-width: 100%;
+  -webkit-box-shadow: 20px 20px 0 -20px #0f614e;
+          box-shadow: 20px 20px 0 -20px #0f614e;
 }
 
 .aside-info {
   background: #0f614e;
-  width: 100%;
-  padding-top: 320px;
+  width: 70%;
+  padding-top: 30px;
   margin-left: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -652,7 +655,7 @@ main a.button, a:visited, a:link {
 }
 
 .blog-entry {
-  width: 65%;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -662,26 +665,26 @@ main a.button, a:visited, a:link {
           flex-direction: column;
   position: relative;
   top: -350px;
+  padding-left: 50px;
 }
 
 .blog-image {
-  width: 100%;
+  max-width: 100%;
+}
+
+.blog-image img {
+  max-width: 100%;
+  -webkit-box-shadow: -20px 20px 0 2px #86e0f9;
+          box-shadow: -20px 20px 0 2px #86e0f9;
+  position: relative;
+  left: 22px;
 }
 
 .blog-text {
   border-left: 4px solid #86e0f9;
   border-bottom: 4px solid #86e0f9;
   padding-left: 19px;
-  width: 70%;
-}
-
-.blog-image img {
-  width: 100%;
-  -webkit-box-shadow: -20px 20px 0 2px #86e0f9;
-          box-shadow: -20px 20px 0 2px #86e0f9;
-  display: block;
-  position: relative;
-  left: 22px;
+  width: 80%;
 }
 
 .blog-text h3 {
@@ -694,7 +697,7 @@ main a.button, a:visited, a:link {
 }
 
 .blog-text p {
-  width: 80%;
+  width: 90%;
   text-align: left;
   padding-left: 20px;
 }
