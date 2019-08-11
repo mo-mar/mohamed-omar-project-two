@@ -1,0 +1,119 @@
+.blog-main{
+    background: $dbg;
+    width: 100%;
+}
+
+.blog-wrapper{
+    width: 100%;
+    max-width: 1920px;
+    margin: 0;
+}
+
+.blog-flex{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+}
+
+.blog-post-side-bar{
+    width: 35%;
+    padding-top: 60px;
+    position: relative;
+    margin-right: 60px;
+    // float: left;
+    // flex: 1 0 25%;
+
+}
+
+.aside-image{
+    width: 100%;
+    position: absolute;
+    top: 45px;
+}
+
+.aside-image img{
+    display: block;
+    width: 100%;
+}
+
+.aside-info{
+    background: $spruce;
+    width: 100%;
+    padding-top: 320px;
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.aside-info-box, .aside-recent-posts{
+    margin: 20px 20px;
+}
+
+.aside-recent-posts a{
+    color: #fff;
+}
+
+.blog-entry{
+    // width: 70%;
+    // float: left;
+    // margin-left: auto;
+    // flex: 1 0 70%;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -350px;
+}
+
+.blog-image{
+    width: 100%;
+}
+
+.blog-text{
+    border-left: 4px solid $robin;
+    border-bottom: 4px solid $robin;
+    padding-left: 19px;
+    width: 70%;
+}
+
+.blog-image img{
+    width: 100%;
+    box-shadow: -20px 20px 0 2px $robin;
+    display: block;
+    position: relative;
+    left: 22px;
+}
+
+.blog-text h3{
+    margin-top: 50px;
+    padding-left: 20px;
+}
+
+.byline{
+    padding-bottom: 30px;
+}
+.blog-text p{
+    width: 80%;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.comment-area{
+    width: 80%;
+
+    h4{
+        margin-bottom: 35px;
+    }
+    p{
+        width: 70%;
+        float: left;
+    }
+
+    .comment-date{
+        margin-top: 0;
+    }
+    img{
+        float: left;
+        margin-right: 25px;
+    }
+}
