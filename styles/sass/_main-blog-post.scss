@@ -28,6 +28,7 @@
     position: absolute;
     top: 45px;
     left: 0;
+    z-index: 10;
 }
 
 .aside-image img{
@@ -38,11 +39,15 @@
 
 .aside-info{
     background: $spruce;
-    width: 70%;
-    padding-top: 30px;
+    width: 60%;
+    min-width: 250px;
+    padding-top: 390px;
     margin-left: 70px;
     display: flex;
     flex-direction: column;
+    position: relative;
+    left: 50px;
+    z-index: 0;
 }
 
 .aside-info-box, .aside-recent-posts{
@@ -58,27 +63,48 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    top: -350px;
+    top: -320px;
     padding-left: 50px;
 }
 
 .blog-image{
     max-width: 100%;
+    
 }
 
 .blog-image img{
-    max-width: 100%;
+    width: 100%;
     box-shadow: -20px 20px 0 2px $robin;
-    position: relative;
-    left: 22px;
 }
 
 .blog-text{
-    border-left: 4px solid $robin;
-    border-bottom: 4px solid $robin;
+    // border-left: 4px solid $robin;
+    // border-bottom: 4px solid $robin;
     padding-left: 19px;
     width: 80%;
+    position: relative;
 }
+
+.blog-text::before{
+    content: '';
+    border-left: 5px solid $robin;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: -22px;
+    top: 0px;
+}
+
+.blog-text::after{
+    content: '';
+    border-bottom: 5px solid $robin;
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: -22px;
+}
+
 
 .blog-text h3{
     margin-top: 50px;
@@ -98,6 +124,7 @@
     width: 80%;
 
     h4{
+        padding-top: 30px;
         margin-bottom: 35px;
     }
     p{
@@ -112,4 +139,18 @@
         float: left;
         margin-right: 25px;
     }
+}
+
+.comment-box input[type=text]{
+    position: relative;
+}
+
+.comment-box input[type=text]::after{
+    content: "";
+    width: 100%;
+    border-bottom: 2px solid $robin;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
 }

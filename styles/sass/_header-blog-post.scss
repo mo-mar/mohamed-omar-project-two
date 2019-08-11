@@ -1,9 +1,11 @@
 
 .blog-header{
-    width: 100%;
+    // width: 100%;
     background: url("../assets/blog-header.jpg");
     background-size: cover;
-    height: 90vh;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    height: 80vh;
 }
 
 .h2-flex{
