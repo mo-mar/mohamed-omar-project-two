@@ -1,13 +1,20 @@
+html{
+    background: $dbg;
+}
+
 header.contact-header{
     background: url("../assets/contact-header.jpg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 75vh;
+    height: 70vh;
+    position: relative;
+
 }
 
 .contact-sheet{
     background: $dbg;
     width: 100%;
+    padding-bottom: 150px;
 }
 
 .social-box{
@@ -29,6 +36,44 @@ header.contact-header{
     color: white
 }
 
-.icon-list li{
-    
+.social-box p{
+    margin: 0;
+}
+
+.social-box h4{
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+}
+
+.contact-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-container{
+    width: calc(65% - 30px);
+    margin-left: 30px;
+    background: $spruce;
+    padding: 90px 50px;
+    box-shadow: -35px 35px 0 -2px $robin;
+    color: white;
+    position: absolute;
+    top: 250px;
+    right: 80px;
+    textarea{
+        padding: 15px;
+    }
+}
+
+.contact-container button[type=submit]{
+    background: $dbg;
+}
+
+.h2-flex-contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    top: -10px;
 }

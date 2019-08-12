@@ -11,22 +11,24 @@
 </head>
 <body>
     <header class="contact-header">
-        <nav>
-            <input type="checkbox" class="hamburger-menu">
-            <i class="fas fa-bars" aria-hidden="true"></i>
-            <ul class="top-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blog-post.html#about-section">About</a></li>
-                <li><a href="blog-post.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="h2-flex">
-            <h2>Get in touch</h2>
+        <div class="wrapper">
+        	<nav>
+        	    <input type="checkbox" class="hamburger-menu">
+        	    <i class="fas fa-bars" aria-hidden="true"></i>
+        	    <ul class="top-nav">
+        	        <li><a href="index.html">Home</a></li>
+        	        <li><a href="blog-post.html#about-section">About</a></li>
+        	        <li><a href="blog-post.html">Blog</a></li>
+        	        <li><a href="contact.html">Contact</a></li>
+        	    </ul>
+        	</nav>
+        	<div class="h2-flex-contact">
+        	    <h2>Get in touch</h2>
+        	</div>
         </div>
     </header>
     <main class="contact-sheet">
-        <div class="wrapper">
+        <div class="wrapper contact-flex">
             <aside class="social-box">
                 <ul class="icon-list">
                     <li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
@@ -40,7 +42,8 @@
                 <p>Toronto, Ontario</p>
                 <p>M5V2D5</p>
             </aside>
-            <section>
+            <section class="contact-container">
+               
                 <form action="" class="comment-box clearfix blog-wrapper">
                     <label for="name" class="visuallyhidden label-border">Name</label>
                     <input type="text" name="comment-box" id="name" placeholder="Name">
@@ -49,11 +52,13 @@
                     <label for="message" class="visuallyhidden">Comment</label>
                     <textarea name="comment-box" cols="70" rows="8" placeholder="Comment" id="message"></textarea>
                     <label for="submit" class="visuallyhidden">Post Comment</label>
-                    <button type="submit" name="comment-box" id="submit">Post Comment</button>
+                    <button type="submit" name="comment-box" id="submit">Submit </button>
                 </form>
+            </section>
         </div>
-        </section>
     </main>
-    
+    <footer>
+        <p>Copyright &copy; 2019 HackerYou</p>
+    </footer>
 </body>
 </html>
