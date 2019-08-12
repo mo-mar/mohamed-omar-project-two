@@ -469,11 +469,13 @@
 
 @media (max-width: 768px){
 
-
+header.contact-header{
+    height: auto;
+}
 
 .contact-flex{
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 20px 0;
 }
 
@@ -484,6 +486,12 @@
     left: 0;
     padding: 0;
     box-shadow: -20px 20px 0 -2px $robin;
+}
+
+.social-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon-list{
@@ -498,7 +506,7 @@
 }
 
 .contact-container{
-    order: -1;
+    // order: -1;
     padding: 0;
     textarea{
         padding: 0;
