@@ -259,15 +259,24 @@
     }
 
      .module2-info1{
-        a.button{
-            top: 0px;
-        }
+        padding-left: 20px;
+            a.button{
+                top: 0px;
+                    }
+            p{
+                width: 95%;
+            }
+        
     }
 
      .module2-info2{
-        a.button{
-            top: 0px;
-        }
+        padding-left: 20px;
+            a.button{
+                top: 0px;
+            }
+            p{
+                width: 95%;
+            }
     }
 
     .services-flex{
@@ -298,7 +307,7 @@
     flex-wrap: wrap;
     width: 100%;    }
     
-    }
+
 
     .module3-img{
     // flex: 1 0 40%;
@@ -323,5 +332,70 @@
         width: 100%;
         }
     margin-left: 0;
+    }
 
+    .mini-gallery{
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    }
+
+    .mini-gallery li{
+    // width: calc(100% / 3) - 30px;
+    // margin: 0 15px;
+    flex: 1 0 100%;
+    margin: 15px;
+    }
+
+    .mini-gallery img{
+    width: 100%;
+    display: block;
+    }
+}
+
+@media (max-width: 500px){
+    
+    .module-1-flex span{
+        display: block;
+        margin-top: 10px;
+    }
+    
+    
+    .services-flex{
+    display: flex;
+    flex-direction: column;
+    // flex: 1 0 50%;
+    // justify-content:;
+    // flex-wrap: wrap;
+    }
+
+    .services-flex i{
+    float: left;
+    color: $dbg;
+    padding: 0.5em;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: $robin;
+    margin-right: 10px;
+}
+
+    .service1, .service2, .service3, .service4{
+    position: relative;
+    width: 100%;
+    margin: 15px 0;
+        p{
+            width:80%;
+            clear: both;
+            margin-left: 10px;
+            padding-top: 15px;
+        }
+        h4{
+            width: 75%;
+        }
+}
 }
