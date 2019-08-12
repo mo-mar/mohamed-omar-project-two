@@ -686,7 +686,7 @@ main a.button, a:visited, a:link {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  left: 15px;
+  left: 17px;
   z-index: 1;
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -698,9 +698,8 @@ main a.button, a:visited, a:link {
   border-right: 15px solid #0f614e;
   width: 50px;
   height: 100%;
-  display: block;
   position: absolute;
-  right: -15px;
+  right: -17px;
   margin-top: 10px;
 }
 
@@ -867,6 +866,10 @@ main a.button, a:visited, a:link {
   padding: 15px;
   border: none;
   margin-top: 35px;
+}
+
+.comment-box input:focus, textarea:focus {
+  background: #86e0f9;
 }
 
 html {
@@ -1410,5 +1413,53 @@ footer p {
   }
   .module3 {
     padding-top: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-header {
+    height: 40vh;
+  }
+  .blog-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+  }
+  .blog-entry, .blog-post-side-bar {
+    width: 90%;
+    position: static;
+    margin: 20px auto;
+  }
+  .blog-entry {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    position: relative;
+    top: 10px;
+    padding-left: 20px;
+  }
+  .blog-text {
+    width: 100%;
+  }
+  .blog-post-side-bar {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    padding-top: 0px;
+  }
+  .comment-area {
+    width: 100%;
+  }
+  .comment-area .comment-a, .comment-area .comment-b {
+    margin: 20px 0;
+  }
+  .comment-box {
+    width: 100%;
   }
 }

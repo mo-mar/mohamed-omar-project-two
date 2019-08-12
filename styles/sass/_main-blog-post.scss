@@ -50,7 +50,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 15px;
+    left: 17px;
     // left: 120px;
     // top: 380px;
     z-index: 1;
@@ -63,9 +63,8 @@
     border-right: 15px solid $spruce;
     width: 50px;
     height: 100%;
-    display: block;
     position: absolute;
-    right: -15px;
+    right: -17px;
     margin-top: 10px;
 }
 
@@ -166,8 +165,9 @@
     width: 100%;
 }
 
+
+
 .comment-box input[type=text], input[type=email]{
-    
     width: 50%;
     border: none;
     background: white;
@@ -230,3 +230,7 @@
     margin-top: 35px;
 }
 
+
+.comment-box input:focus, textarea:focus{
+    background: $robin;
+}

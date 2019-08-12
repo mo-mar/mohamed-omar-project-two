@@ -419,3 +419,48 @@
 
 // blog post queries
 
+@media (max-width: 768px){
+    .blog-header{
+        height: 40vh;
+    }
+
+    .blog-flex{
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+    }
+
+    .blog-entry, .blog-post-side-bar{
+        width: 90%;
+        position: static;
+        margin: 20px auto;
+    }
+
+    .blog-entry{
+        order: -1;
+        position: relative;
+        top: 10px;
+        padding-left: 20px;
+    }
+
+    .blog-text{
+        width: 100%;
+    }
+
+    .blog-post-side-bar{
+        order: 0;
+        padding-top: 0px;
+    }
+
+    .comment-area{
+        width: 100%;
+        .comment-a, .comment-b{
+            margin: 20px 0;
+        }
+    }
+
+    .comment-box{
+        width: 100%;
+    }
+
+}
