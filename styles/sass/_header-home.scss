@@ -31,7 +31,15 @@ nav ul{
             text-transform: uppercase;
             font-family: 'Barlow', sans-serif;
             font-weight: 700;
+            transition: none;
         }
+}
+
+
+a:hover{
+   border-bottom: 5px groove $spruce;
+   padding-bottom: 5px;
+   transition: 0.5s;
 }
 
 .hero{

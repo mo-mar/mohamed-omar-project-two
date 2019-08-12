@@ -285,6 +285,15 @@ nav ul a {
   text-transform: uppercase;
   font-family: 'Barlow', sans-serif;
   font-weight: 700;
+  -webkit-transition: none;
+  transition: none;
+}
+
+a:hover {
+  border-bottom: 5px groove #0f614e;
+  padding-bottom: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .hero {
@@ -336,7 +345,7 @@ nav ul a {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  top: 90px;
+  top: 60px;
 }
 
 main a.button, a:visited, a:link {
@@ -685,12 +694,13 @@ main a.button, a:visited, a:link {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  top: -320px;
+  top: -420px;
   padding-left: 50px;
+  margin-bottom: -350px;
 }
 
 .blog-image {
-  max-width: 100%;
+  width: 100%;
 }
 
 .blog-image img {
@@ -750,7 +760,7 @@ main a.button, a:visited, a:link {
 }
 
 .comment-area p {
-  width: 70%;
+  width: 80%;
   float: left;
 }
 
@@ -761,20 +771,72 @@ main a.button, a:visited, a:link {
 .comment-area img {
   float: left;
   margin-right: 25px;
+  width: 10%;
+}
+
+.comment-box {
+  width: 100%;
+}
+
+.comment-box input[type=text], input[type=email] {
+  width: 50%;
+  border: none;
+  background: white;
+  float: left;
+  color: #fff;
+  background: none;
+  border-bottom: 2px solid #86e0f9;
+  padding-bottom: 25px;
 }
 
 .comment-box input[type=text] {
+  width: calc(60% - 25px);
+  margin-right: 25px;
   position: relative;
 }
 
-.comment-box input[type=text]::after {
-  content: "";
+.comment-box input[type=email] {
+  width: 40%;
+  position: relative;
+}
+
+::-webkit-input-placeholder {
+  color: #fffdfd;
+}
+
+:-ms-input-placeholder {
+  color: #fffdfd;
+}
+
+::-ms-input-placeholder {
+  color: #fffdfd;
+}
+
+::placeholder {
+  color: #fffdfd;
+}
+
+.comment-box textarea {
+  clear: both;
   width: 100%;
-  border-bottom: 2px solid #86e0f9;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  margin-top: 40px;
+  border: 1px solid #86e0f9;
+  background: none;
+}
+
+.comment-box button[type=submit] {
+  clear: both;
   display: block;
+  width: 100%;
+  background: #0f614e;
+  text-align: center;
+  color: white;
+  font-family: 'Barlow', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 15px;
+  border: none;
+  margin-top: 35px;
 }
 
 footer {
