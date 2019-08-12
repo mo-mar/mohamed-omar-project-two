@@ -289,7 +289,7 @@ nav ul a {
   transition: none;
 }
 
-a:hover {
+nav ul a:hover {
   border-bottom: 5px groove #0f614e;
   padding-bottom: 5px;
   -webkit-transition: 0.5s;
@@ -427,6 +427,11 @@ main a.button, a:visited, a:link {
   width: 80%;
 }
 
+.module2-info1 a.button {
+  position: relative;
+  top: 25px;
+}
+
 .bottom-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -477,6 +482,11 @@ main a.button, a:visited, a:link {
   margin-top: 120px;
   padding-left: 35px;
   width: 45%;
+}
+
+.module2-info2 a.button {
+  position: relative;
+  top: 35px;
 }
 
 .module2 a.button {
@@ -837,6 +847,41 @@ main a.button, a:visited, a:link {
   padding: 15px;
   border: none;
   margin-top: 35px;
+}
+
+header.contact-header {
+  background: url("../assets/contact-header.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 75vh;
+}
+
+.contact-sheet {
+  background: #0c1423;
+  width: 100%;
+}
+
+.social-box {
+  width: 25%;
+}
+
+.icon-list {
+  width: 35%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.icon-list a, a:link, a:visited {
+  text-decoration: none;
+  color: white;
 }
 
 footer {

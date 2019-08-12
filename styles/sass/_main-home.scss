@@ -55,6 +55,10 @@ main a.button, a:visited, a:link{
     p{
         width: 80%;
     }
+    a.button{
+       position: relative;
+       top: 25px;
+    }
 }
 
 .bottom-row{
@@ -96,11 +100,16 @@ main a.button, a:visited, a:link{
     margin-top: 120px;
     padding-left: 35px;
     width: 45%;
+    a.button{
+        position: relative;
+        top: 35px;
+    }
 }
 
 .module2 a.button{
     color: #fff;
     background: $dbg;
+    
 }
 
 

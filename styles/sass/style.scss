@@ -6,14 +6,18 @@
 
 // end general
 
-// header styles
+// header styles for home and blog posts
 @import "header-home";
 @import "header-blog-post";
-// main styles for home section
+
+// main styles for home section and blog posts
 
 @import "main-home";
 @import "main-blog-post";
 
+// styles for contact page - grouping it in only one partial because it is short
+
+@import "contact-styles";
 
 // footer styles
 
