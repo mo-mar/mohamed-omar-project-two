@@ -633,8 +633,8 @@ main a.button, a:visited, a:link {
 
 .blog-wrapper {
   width: 100%;
-  max-width: 1920px;
-  margin: 0;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .blog-flex {
@@ -671,9 +671,9 @@ main a.button, a:visited, a:link {
 
 .aside-info {
   background: #0f614e;
-  width: 60%;
+  width: 70%;
   min-width: 250px;
-  padding-top: 390px;
+  padding-top: 370px;
   margin-left: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -683,7 +683,7 @@ main a.button, a:visited, a:link {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  left: 50px;
+  left: 75px;
   z-index: 0;
 }
 
@@ -705,7 +705,8 @@ main a.button, a:visited, a:link {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  top: -420px;
+  top: -390px;
+  right: 0px;
   padding-left: 50px;
   margin-bottom: -350px;
 }
@@ -1289,6 +1290,9 @@ footer p {
         flex-wrap: wrap;
     width: 100%;
   }
+  .module-3 {
+    padding: 40px 25px;
+  }
   .module3-img {
     width: 75%;
     margin-bottom: 45px;
@@ -1324,21 +1328,21 @@ footer p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 80%;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
   }
   .mini-gallery li {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 100%;
-            flex: 1 0 100%;
-    margin: 15px;
+    width: 50%;
   }
   .mini-gallery img {
     width: 100%;
     display: block;
+  }
+  .mini-gallery li:first-of-type {
+    display: none;
   }
 }
 
@@ -1346,6 +1350,12 @@ footer p {
   .module-1-flex span {
     display: block;
     margin-top: 10px;
+  }
+  figure.banner-home-page {
+    display: none;
+  }
+  section.services {
+    padding-bottom: 40px;
   }
   .services-flex {
     display: -webkit-box;
@@ -1380,5 +1390,8 @@ footer p {
   }
   .service1 h4, .service2 h4, .service3 h4, .service4 h4 {
     width: 75%;
+  }
+  .module3 {
+    padding-top: 40px;
   }
 }
