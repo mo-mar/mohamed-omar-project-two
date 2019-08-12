@@ -464,3 +464,45 @@
     }
 
 }
+
+// contact page queries
+
+@media (max-width: 768px){
+
+
+
+.contact-flex{
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.contact-container, .social-box{
+    position: static;
+    width: 90%;
+    top: 0;
+    left: 0;
+    padding: 0;
+    box-shadow: -20px 20px 0 -2px $robin;
+}
+
+.icon-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.social-box{
+    display: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container{
+    order: -1;
+    padding: 0;
+    textarea{
+        padding: 0;
+    }
+}
+
+}
