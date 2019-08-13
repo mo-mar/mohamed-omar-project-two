@@ -260,7 +260,7 @@ nav {
   padding-bottom: 120px;
 }
 
-header i.fa-bars, input.hamburger-menu {
+header i.fa-bars, input {
   display: none;
 }
 
@@ -988,6 +988,9 @@ footer p {
   .module-1 {
     padding: 80px 0;
   }
+  .module-1-flex {
+    margin-top: 90px;
+  }
   .module2-info1 {
     padding: 30px 0;
     padding-left: 10px;
@@ -1016,13 +1019,21 @@ footer p {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-  header i.fa-bars, input.hamburger-menu {
-    display: block;
-    font-size: 40px;
-    padding-right: 20px;
-  }
   .top-nav {
     display: none;
+    background: #0f614e;
+  }
+  header i.fa-bars, label {
+    font-size: 50px;
+    display: inline-block;
+    margin-right: 50px;
+  }
+  header input.hamburger-menu {
+    opacity: 0;
+    display: block;
+  }
+  input.hamburger-menu:checked + .top-nav {
+    display: block;
   }
   .hero-hed {
     padding-left: 30px;
@@ -1473,8 +1484,9 @@ footer p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1514,6 +1526,10 @@ footer p {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .icon-list i {
+    font-size: 25px;
+    margin: 10px 0;
+  }
   .social-box {
     display: row;
     -webkit-box-pack: center;
@@ -1544,5 +1560,20 @@ footer p {
   }
   .comment-box-large {
     padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 400px) {
+  .social-box {
+    padding-top: 30px;
+  }
+  .icon-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
