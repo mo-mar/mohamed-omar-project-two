@@ -935,7 +935,7 @@ header.contact-header {
   width: calc(65% - 30px);
   margin-left: 30px;
   background: #0f614e;
-  padding: 90px 50px;
+  padding: 80px 50px;
   -webkit-box-shadow: -35px 35px 0 -2px #86e0f9;
           box-shadow: -35px 35px 0 -2px #86e0f9;
   color: white;
@@ -1475,16 +1475,19 @@ footer p {
             flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 20px 0;
+    padding: 0 20px;
+    width: 100%;
   }
   .contact-container, .social-box {
     position: static;
-    width: 90%;
+    width: 100%;
     top: 0;
     left: 0;
     padding: 0;
-    -webkit-box-shadow: -20px 20px 0 -2px #86e0f9;
-            box-shadow: -20px 20px 0 -2px #86e0f9;
   }
   .social-box {
     display: -webkit-box;
@@ -1496,6 +1499,11 @@ footer p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 50px;
+    -webkit-box-shadow: 0;
+            box-shadow: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .icon-list {
     display: -webkit-box;
@@ -1517,8 +1525,24 @@ footer p {
   }
   .contact-container {
     padding: 0;
+    position: static;
+    -webkit-box-shadow: -10px 15px 0 0 #86e0f9;
+            box-shadow: -10px 15px 0 0 #86e0f9;
   }
   .contact-container textarea {
     padding: 0;
+  }
+  .contact-sheet {
+    padding-bottom: 60px;
+    width: 100%;
+  }
+  .comment-box {
+    -webkit-box-shadow: 0;
+            box-shadow: 0;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .comment-box-large {
+    padding-bottom: 50px;
   }
 }
