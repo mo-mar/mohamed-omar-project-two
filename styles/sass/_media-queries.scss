@@ -1,6 +1,6 @@
 
 
-// ipad landscape to laptop
+// main media queries
 
 @media (min-width: 900px) and (max-width: 1024px){
     .module2-info2{
@@ -33,6 +33,7 @@
     }
 }
 
+// media queries for tablet/older laptops
 
 @media (min-width: 600px) and (max-width: 900px){
 
@@ -75,6 +76,7 @@
 
 
     nav label{
+        display: block;
         font-size: 65px;
         margin-right: 30px;
     }
@@ -229,6 +231,8 @@
 
 }
 
+// media queries for some tablets/mega large phones in landscape
+
 @media (max-width: 600px){
 
     html{
@@ -245,9 +249,11 @@
     nav{
         display: flex;
         justify-content: flex-end;
+        padding-bottom: 20px;
     }
     
     nav label{
+        display: block;
         font-size: 65px;
         margin-right: 30px;
     }
@@ -269,16 +275,6 @@
     input.hamburger-menu:checked + .top-nav li{
         display: inline;
     } 
-
-
-
-    nav{
-        padding-bottom: 20px;
-    }
-
-    .top-nav{
-        display: none;
-    }
 
     .hero{
         display: flex;
@@ -434,6 +430,50 @@
     .mini-gallery li:first-of-type{
         display: none;
     }
+}
+
+// special media query for hamburger menu
+
+@media (max-width: 599px){
+    nav label{
+        display: block;
+        font-size: 65px;
+        margin-right: 30px;
+    }
+
+     .top-nav{
+        display: none;
+        background: $spruce;
+        transition: none;
+        animation: swing-bottom-bck 0.8s forwards;
+    }
+
+     @keyframes swing-bottom-bck {
+            0% {
+            -webkit-transform: rotateX(0);
+                    transform: rotateX(0);
+            -webkit-transform-origin: top;
+                    transform-origin: top;
+            }
+            100% {
+            -webkit-transform: rotateX(360deg);
+                    transform: rotateX(360deg);
+            -webkit-transform-origin: bottom;
+                    transform-origin: bottom;
+            }
+    }
+    
+    input.hamburger-menu:checked + .top-nav{
+        display: block;
+        position: absolute;
+        right: -50px;
+        top: 120px;
+        transition: 1s;
+    }
+
+    input.hamburger-menu:checked + .top-nav li{
+        display: block;
+    } 
 }
 
 @media (max-width: 500px){
