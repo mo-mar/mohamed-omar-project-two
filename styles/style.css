@@ -217,6 +217,10 @@ a {
   text-decoration: none;
 }
 
+a:focus {
+  border: 2px solid tomato;
+}
+
 .button {
   font-family: 'Barlow', sans-serif;
   font-weight: 700;
@@ -402,30 +406,22 @@ main a.button, a:visited, a:link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
+  padding-bottom: 50px;
 }
 
 .module2-info1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  margin-left: auto;
   padding-top: 60px;
   padding-left: 60px;
   width: 50%;
 }
 
 .module2-info1 p {
-  width: 80%;
+  width: 90%;
 }
 
 .module2-info1 a.button {
@@ -465,12 +461,13 @@ main a.button, a:visited, a:link {
 }
 
 .module2-img1 {
-  position: relative;
-  top: -20px;
+  position: absolute;
+  left: 0px;
 }
 
 .module2-img2 {
-  position: relative;
+  position: absolute;
+  right: 0;
   bottom: -30px;
 }
 
@@ -487,7 +484,7 @@ main a.button, a:visited, a:link {
 
 .module2-info2 a.button {
   position: relative;
-  top: 35px;
+  top: 10px;
 }
 
 .module2 a.button {
@@ -1050,6 +1047,13 @@ footer p {
   .hero-image {
     padding-top: 50px;
   }
+  .module2-img1 {
+    position: static;
+  }
+  .module2-img2 {
+    position: static;
+    padding-top: 30px;
+  }
   .top-row, .bottom-row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1256,6 +1260,13 @@ footer p {
   }
   .module2-info1, .module2-info2, .module2-img1, .module2-img2 {
     width: 100%;
+  }
+  .module2-img1 {
+    position: static;
+  }
+  .module2-img2 {
+    position: static;
+    padding-top: 30px;
   }
   .module2-info2 {
     -webkit-box-ordinal-group: 1;

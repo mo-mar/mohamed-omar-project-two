@@ -72,8 +72,6 @@
         padding-left: 30px;
     }
 
-
-
     h1{
         font-size: 5rem;
     }
@@ -88,6 +86,15 @@
 
     .hero-image{
         padding-top: 50px;
+    }
+
+    .module2-img1{
+    position: static;
+    }
+
+    .module2-img2{
+    position: static;
+    padding-top: 30px;
     }
 
     .top-row, .bottom-row {
@@ -266,6 +273,15 @@
     }
     .module2-info1, .module2-info2, .module2-img1, .module2-img2{
         width: 100%;
+    }
+
+    .module2-img1{
+    position: static;
+    }
+
+    .module2-img2{
+    position: static;
+    padding-top: 30px;
     }
 
     .module2-info2{
