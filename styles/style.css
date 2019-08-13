@@ -1561,6 +1561,9 @@ footer p {
 }
 
 @media (max-width: 600px) {
+  .blog-header .h2-flex {
+    top: 100px;
+  }
   nav label {
     display: block;
     font-size: 65px;
@@ -1606,9 +1609,11 @@ footer p {
     display: block;
     position: absolute;
     right: 0;
-    top: 100px;
+    top: 60px;
     -webkit-transition: 1s;
     transition: 1s;
+    margin: 0 auto;
+    width: 50%;
   }
   input.hamburger-menu:checked + .top-nav li {
     display: inline;
