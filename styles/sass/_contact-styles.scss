@@ -1,3 +1,5 @@
+
+
 html{
     background: $dbg;
 }
@@ -75,4 +77,5 @@ header.contact-header{
     align-items: flex-start;
     position: relative;
     top: -10px;
+    z-index: 10;
 }

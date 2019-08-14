@@ -317,6 +317,7 @@ nav ul {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-right: 75px;
+  z-index: 100;
 }
 
 nav ul li {
@@ -858,6 +859,10 @@ main a.button, a:visited, a:link {
   position: relative;
 }
 
+.comment-box input[type=name]:focus {
+  background: #86e0f9;
+}
+
 .comment-box input[type=email] {
   width: 40%;
   position: relative;
@@ -1000,6 +1005,7 @@ header.contact-header {
           align-items: flex-start;
   position: relative;
   top: -10px;
+  z-index: 10;
 }
 
 footer {
@@ -1073,6 +1079,7 @@ footer p {
     transition: none;
     -webkit-animation: swing-bottom-bck 0.8s forwards;
             animation: swing-bottom-bck 0.8s forwards;
+    z-index: 100;
   }
   @-webkit-keyframes swing-bottom-bck {
     0% {
@@ -1115,6 +1122,7 @@ footer p {
     top: 80px;
     -webkit-transition: 1s;
     transition: 1s;
+    z-index: 100;
   }
   input.hamburger-menu:checked + .top-nav li {
     display: inline;
@@ -1747,9 +1755,29 @@ footer p {
     padding-bottom: 25px;
     padding-top: 20px;
   }
+  .comment-box [type=text]:focus {
+    background: #86e0f9;
+  }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 768px) and (max-width: 600px) {
+  .h2-flex-contact {
+    width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    position: relative;
+    top: -10px;
+  }
+}
+
+@media (max-width: 768px) and (max-width: 400px) {
   .social-box {
     padding-top: 30px;
   }

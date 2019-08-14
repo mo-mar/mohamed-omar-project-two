@@ -2,7 +2,7 @@
 
 // main media queries
 
-// this one is special, for huge screens
+// this for huge screens
 
 @media (min-width: 1500px){
     .module2-img1 {
@@ -71,6 +71,7 @@
         background: $spruce;
         transition: none;
         animation: swing-bottom-bck 0.8s forwards;
+        z-index: 100;
     }
 
     // this animation is via Animista.net, A LIFESAVER
@@ -104,6 +105,7 @@
         right: 0;
         top: 80px;
         transition: 1s;
+        z-index: 100;
     }
 
     input.hamburger-menu:checked + .top-nav li{
@@ -700,7 +702,20 @@ header.contact-header{
     padding-top: 20px;
 }
 
+.comment-box [type=text]:focus{
+    background: $robin;
+}
 
+@media (max-width: 600px){
+    
+    .h2-flex-contact{
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    top: -10px;
+}
 }
 
 @media (max-width: 400px){
@@ -714,3 +729,4 @@ header.contact-header{
     }
 }
 
+}

@@ -184,6 +184,10 @@
     position: relative;
 }
 
+.comment-box input[type=name]:focus{
+    background: $robin;
+}
+
 
 .comment-box input[type=email]{
     width: 40%;
