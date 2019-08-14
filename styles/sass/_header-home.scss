@@ -1,3 +1,6 @@
+
+// main header style. Applies to all pages but each may contain additional classes/styling
+
 header{
     background: linear-gradient(rgba(0, 0, 0, 0.3) rgba(0, 0, 0, 0.9)), url("../assets/header-image.jpg");
     background-size: cover;
@@ -6,11 +9,15 @@ header{
     position: relative;
 }
 
+// global nav bar
+
 nav{
     width: 100%;
     padding-top: 15px;
     padding-bottom: 120px;
 }
+
+// hiding icon and checkbox for hamburger menu
 
 header label, header input{
     display: none;
@@ -36,12 +43,14 @@ nav ul{
         }
 }
 
-
+// fancy green underline for nav links
 nav ul a:hover{
    border-bottom: 5px groove $spruce;
    padding-bottom: 5px;
    transition: 0.5s;
 }
+
+// main hero flex container holding h1 and main image
 
 .hero{
     width: 100%;

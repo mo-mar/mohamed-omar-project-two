@@ -8,7 +8,6 @@ html{
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    border: 2px solid tomato;
 }
 
 h1, h2, h3, h4{
@@ -49,6 +48,7 @@ body{
     font-weight: 400;
 }
 
+// this is general, but there is special styling for :Focus states
 a{
     text-decoration: none;
 }
@@ -78,6 +78,7 @@ a:focus{
     border: 5px solid rebeccapurple;
 }
 
+// for placeholder text in forms
 
 ::placeholder{
     color: white;
@@ -94,6 +95,8 @@ a:focus{
     text-transform: uppercase;
     padding: 10px 20px;
 }
+
+// general img style, to remember making it disp block
 
 img{
     display: block;

@@ -1,8 +1,11 @@
 
+// background color for contact page
 
-html{
+.contact-body{
     background: $dbg;
 }
+
+// to give unique styles beyond general header (new bg image, height, etc.)
 
 header.contact-header{
     background: url("../assets/contact-header.jpg");
@@ -12,11 +15,15 @@ header.contact-header{
     position: relative;
 }
 
+// main container holding form
+
 .contact-sheet{
     background: $dbg;
     width: 100%;
     padding-bottom: 100px;
 }
+
+// social box contains both icon list and address/email/etc
 
 .social-box{
     width: 25%;
@@ -46,10 +53,14 @@ header.contact-header{
     font-size: 1.2rem;
 }
 
+// this is a flex container for social box and form
+
 .contact-flex{
     display: flex;
     justify-content: space-between;
 }
+
+// actual comment form code, this is the important stuff
 
 .contact-container{
     width: calc(65% - 30px);
@@ -69,6 +80,8 @@ header.contact-header{
 .contact-container button[type=submit]{
     background: $dbg;
 }
+
+// styles for h2 in header
 
 .h2-flex-contact{
     width: 100%;

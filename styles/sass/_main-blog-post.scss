@@ -1,3 +1,6 @@
+
+// main styles for blog page
+
 .blog-main{
     background: $dbg;
     width: 100%;
@@ -9,11 +12,15 @@
     margin: 0 auto;
 }
 
+// main flex container is below
+
 .blog-flex{
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
+
+// side bar on left
 
 .blog-post-side-bar{
     width: 35%;
@@ -76,6 +83,8 @@
     color: #fff;
 }
 
+// main container holding blog image, text and comment area
+
 .blog-entry{
     width: 60%;
     display: flex;
@@ -124,7 +133,6 @@
     left: -22px;
 }
 
-
 .blog-text h3{
     margin-top: 50px;
     padding-left: 20px;
@@ -138,6 +146,8 @@
     text-align: left;
     padding-left: 20px;
 }
+
+// form styles begin here
 
 .comment-area{
     width: 80%;
@@ -194,9 +204,6 @@
     position: relative;
 }
 
-::placeholder{
-    color: #ffffff;
-}
 
 .comment-box textarea{
     clear: both;
@@ -206,8 +213,6 @@
     background:none;
     resize: none;
 }
-
-
 
 .comment-box button[type=submit]{
     clear: both;
