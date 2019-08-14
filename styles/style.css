@@ -1013,6 +1013,17 @@ footer p {
   margin: 0;
 }
 
+@media (min-width: 1500px) {
+  .module2-img1 {
+    position: relative;
+    left: 0;
+  }
+  .module2-img2 {
+    position: relative;
+    right: 0;
+  }
+}
+
 @media (min-width: 900px) and (max-width: 1024px) {
   .module2-info2 {
     margin-top: 15px;
@@ -1035,16 +1046,6 @@ footer p {
   }
   .module2-info2 a.button {
     top: 0px;
-  }
-  .module2-img1 img {
-    -webkit-box-shadow: 23px 20px 0px 0px #86e0f9;
-            box-shadow: 23px 20px 0px 0px #86e0f9;
-    width: 100%;
-  }
-  .module2-img2 img {
-    -webkit-box-shadow: -23px 23px 0px #86e0f9;
-            box-shadow: -23px 23px 0px #86e0f9;
-    width: 100%;
   }
 }
 

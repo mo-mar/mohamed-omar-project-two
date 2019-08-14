@@ -2,6 +2,20 @@
 
 // main media queries
 
+// this one is special, for huge screens
+
+@media (min-width: 1500px){
+    .module2-img1 {
+    position: relative;
+    left: 0;
+}
+
+.module2-img2 {
+    position: relative;
+    right: 0;
+}
+}
+
 @media (min-width: 900px) and (max-width: 1024px){
     .module2-info2{
         margin-top: 15px;
@@ -32,15 +46,6 @@
         }
     }
 
-    .module2-img1 img{
-    box-shadow: 23px 20px 0px 0px $robin;
-    width: 100%;
-}
-
-.module2-img2 img{
-    box-shadow: -23px 23px 0px $robin;
-    width: 100%
-}
 
 }
 
